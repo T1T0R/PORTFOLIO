@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar nav a {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar nav a:hover {
+    background-color: #444466;
+    color: #ffffff;
+}
+
+
+  body {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #1b1b2f;
+    color: white;
+  }
+.sidebar {
+    width: 240px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b3e5fc; /* Light blue */
+    text-shadow: 1px 1px 2px #000000;
+    border-right: 2px solid #263238; /* Dark blue-gray */
+    background-color: #102027; /* Very dark teal */
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.perfil {
+    width: 100%;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #4fc3f7; /* Sky blue */
+    text-decoration: none;
+    margin: 10px 0;
+}
+  .sidebar nav a.active {
+    color: #00ffcc;
+  }
+  
+  .contenido {
+    margin-left: 220px;
+    padding: 40px;
+    width: 100%;
+    overflow-y: auto;
+  }
+.contenido h1, .contenido h2 {
+    color: #00ffcc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 21px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contenido a {
+    color: #4fc3f7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contenido a:hover {
+    color: #00ffcc;
+}
+
+.contenido ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.contenido ul li {
+    margin-bottom: 10px;
+}
+
+.download-cv-button {
+    background-color: #00ffcc;
+    color: #1b1b2f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-logo:hover {
+    transform: scale(1.1);
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+#skills ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#skills ul li img {
+    flex-shrink: 0;
+}
+
+
+  section {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .skill-logo{
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+
+.you-can-do-it,.contact-me {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff69b4; /* Hot pink */
+    text-align: left;
+    margin-top: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    font-family: 'Pacifico', cursive; /* A stylish font */
+}
+
+      
+      .download-cv-button:hover {
+     background-color: #00e5ff; /* Lighter teal */
+     transform: translateY(-2px);
+      }
+    
+      .download-cv-button:active {
+     transform: translateY(0);
+      }
+    
+      .download-cv-button:focus {
+     outline: none;
+      }
+    
+      .download-cv-button::after {
+     content: " ";
+     display: block;
+     width: 100%;
+     height: 2px;
+     background-color: #00ffcc;
+     transition: width 0.3s ease;
+      }
+    
+      .download-cv-button:hover::after {
+     width: 0%;
+      }
+      
+.title-content,.about-me,.title-skills,.title-contact,.title-proyects {
+    font-size: 64px; /* Larger text for section titles */
+    font-weight: bold;
+    color: #00ffcc; /* Contrasting teal color */
+    text-align: left;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+}
+.skill-category {
+    font-size: 36px; /* Medium size for skill categories */
+    font-weight: bold;
+    color: #ffc107; /* A more vibrant and commonly used yellow */
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+}
+
+.about-me.text{
+    font-size: 24px; /* Smaller text for description */
+    line-height: 1.6; /* Improved line height for readability */
+    color: #e0f7fa; /* Light blue color */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+}
+
+.social-buttons{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.social-logo {
+    width: 60px;
+    height: 60px;
+    margin: 20px 20px 40px; /* Adds extra bottom margin for spacing */
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    animation: bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.social-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(30px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.welcome-to-porfolio {
+    font-size: 72px; /* Large size to stand out */
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+    color: #0078d7; /* Professional blue */
+    text-shadow: 2px 2px 6px rgba(0, 120, 215, 0.5); /* Subtle blue shadow */
+    font-family: 'Poppins', sans-serif; /* Modern and professional font */
+    background: linear-gradient(90deg, #0078d7, #00bcd4, #0078d7); /* Blue to teal gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the gradient visible on text */
+    border-radius: 10px;
+}
+
+.proyect-video{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+}
+
+.proyect-video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.proyect-description{
+    font-size: 24px; /* Smaller text for description */
+    line-height: 1.6; /* Improved line height for readability */
+    color: #e0f7fa; /* Light blue color */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+    margin-top: 20x;
+
+}
+
